@@ -12,6 +12,7 @@
 		B3FA20A12817871B00583B44 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B3FA209F2817871B00583B44 /* Main.storyboard */; };
 		B3FA20A32817872000583B44 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B3FA20A22817872000583B44 /* Assets.xcassets */; };
 		B3FA20A62817872000583B44 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B3FA20A42817872000583B44 /* LaunchScreen.storyboard */; };
+		B3FA20AF281794A500583B44 /* Elements in Frameworks */ = {isa = PBXBuildFile; productRef = B3FA20AE281794A500583B44 /* Elements */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +31,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B3FA20AF281794A500583B44 /* Elements in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -82,6 +84,9 @@
 			dependencies = (
 			);
 			name = WevAPIPractice;
+			packageProductDependencies = (
+				B3FA20AE281794A500583B44 /* Elements */,
+			);
 			productName = WevAPIPractice;
 			productReference = B3FA20962817871B00583B44 /* WevAPIPractice.app */;
 			productType = "com.apple.product-type.application";
@@ -110,6 +115,9 @@
 				Base,
 			);
 			mainGroup = B3FA208D2817871B00583B44;
+			packageReferences = (
+				B3FA20AD281794A500583B44 /* XCRemoteSwiftPackageReference "ElementKit" */,
+			);
 			productRefGroup = B3FA20972817871B00583B44 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -354,6 +362,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		B3FA20AD281794A500583B44 /* XCRemoteSwiftPackageReference "ElementKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/practice20200/ElementKit";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		B3FA20AE281794A500583B44 /* Elements */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = B3FA20AD281794A500583B44 /* XCRemoteSwiftPackageReference "ElementKit" */;
+			productName = Elements;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = B3FA208E2817871B00583B44 /* Project object */;
 }
